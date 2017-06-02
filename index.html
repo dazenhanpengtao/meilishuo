@@ -1,101 +1,559 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<title>美丽说首页</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="js/pubuliu.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
-	<div id="global-head" class="head">
-		<div id="nav">
-			<div class="inner">
-		<ul>
-			<li>
-				<a href="http://www.meilishuo.com/user/connect/weixin">
-					<em class="weixin"></em>微信登录</a>
-			</li>
-			<li>
-				<a href="http://www.meilishuo.com/user/connect/qq"> 
-					<em class="qq"></em>QQ登录</a> 
-			</li>
-			<li> <a href="http://www.meilishuo.com/user/login">登录</a> </li>
-			<li> <a href="http://www.meilishuo.com/user/register">注册</a> </li>
-			<li class="drop"> 
-				<a href=""> <em class="collect"></em>我的收藏 </a>
-			<ul class="down">
-				<li><a href=""> 收藏宝贝</a></li> 
-				<li><a href=""> 收藏店铺</a></li> 
+		<div id="global-head" class="head">
+			<div id="nav">
+				<div class="inner">
+					<ul>
+						<li>
+							<a href="weixinlogin.html">
+								<em class="weixin"></em>微信登录</a>
+						</li>
+						<li>
+							<a href="http://www.meilishuo.com/user/connect/qq">
+								<em class="qq"></em>QQ登录</a>
+						</li>
+						<li>
+							<a href="http://www.meilishuo.com/user/login">登录</a>
+						</li>
+						<li>
+							<a href="http://www.meilishuo.com/user/register">注册</a>
+						</li>
+						<li class="drop">
+							<a href=""> <em class="collect"></em>我的收藏 </a>
+							<ul class="down">
+								<li>
+									<a href=""> 收藏宝贝</a>
+								</li>
+								<li>
+									<a href=""> 收藏店铺</a>
+								</li>
+							</ul>
+						</li>
+						<li class="drop cart-wrapper">
+							<a href="" class="my-cart">
+								<em class="cart"></em>我的购物车 </a>
+						</li>
+						<li>
+							<a href=""> <em class="order"></em>我的订单</a>
+						</li>
+						<li class="drop">
+							<a target="_blank">帮助中心<em class="arrow"></em></a>
+							<ul class="down">
+								<li>
+									<a href="">买家服务</a>
+								</li>
+								<li>
+									<a href="">商家服务</a>
+								</li>
+								<li>
+									<a href="">规则中心</a>
+								</li>
+
+							</ul>
+						</li>
+						<li>
+							<a href="" class="last">商家后台</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="search">
+				<div class="search-inner">
+					<a href="http://www.meilishuo.com/" class="logo"></a>
+
+					<div class="search-box">
+						<div class="search-tab">
+							<span class="active">宝贝</span>
+							<span>店铺</span>
+						</div>
+						<div class="sousuo">
+							<input class="search-txt" type="text">
+							<span class="search-btn"></span>
+						</div>
+						<div class="hotword">
+							<a href="" style="color:#FF3366;font-size: 11px">春季新品</a>
+							<a href="" style="color:#666666;font-size: 11px">运动鞋</a>
+							<a href="" style="color:#FF3366;font-size: 11px">衬衫</a>
+							<a href="" style="color:#666;font-size: 11px">薄外套</a>
+							<a href="" style="color:#666666;font-size: 11px">牛仔</a>
+							<a href="" style="color:#666;font-size: 11px">T恤</a>
+							<a href="" style="color:#666;font-size: 11px">套装</a>
+							<a href="" style="color:#666666;font-size: 11px">牛仔裤</a>
+							<a href="" style="color:#666;font-size: 11px">开衫</a>
+							<a href="" style="color:#FF3366;font-size: 11px">小白鞋</a>
+							<a href="" style="color:#666666;font-size: 11px">风衣</a>
+							<a href="" style="color:#666;font-size: 11px">卫衣</a>
+						</div>
+					</div>
+					<a class="spread">
+						<img src="img/erweima.gif" />
+					</a>
+				</div>
+			</div>
+			<div class="sec-nav">
+				<ul class="nav-con">
+					<li class="nav-item">
+						<a class="link active1" style="color: #F36;" href="http://www.meilishuo.com/">首页</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="index2.html">上衣</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="index3.html">裙子</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="index4.html">裤子</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="index5.html">女鞋</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="index6.html">包包</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="">配饰</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="">美妆</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="">男友</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="">童装</a>
+					</li>
+					<li class="nav-item">
+						<a class="link" href="">家居</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="sliderBox">
+			<ul id="sliderList">
+				<li><img src="img/l1.jpg"></li>
+				<li><img src="img/l2.png"></li>
+				<li><img src="img/l3.jpg"></li>
+				<li><img src="img/l4.jpg"></li>
 			</ul>
-			</li>
-			<li class="drop cart-wrapper"> <a href="" class="my-cart"> 
-				<em class="cart"></em>我的购物车  </a>  
-			</li>
-			<li> 
-				<a href=""> <em class="order"></em>我的订单</a>
-			</li>
-			<li class="drop"> 
-				<a target="_blank">帮助中心<em class="arrow"></em></a> 
-				<ul class="down"> 
-					<li><a href="">买家服务</a></li> 
-					<li><a href="">商家服务</a></li> 
-					<li><a href="">规则中心</a></li>
+			<ul id="sliderNav">
+				<li></li><li></li><li></li><li></li>
+			</ul>
+			<div id="sliderBtns">
+				<div class="btn">&lt;</div>
+				<div class="btn">&gt;</div>
+			</div>
+		</div>
+    <div class="new">
+    	<ul>
+    		<li><a href=""><img src="img/new1.jpg" title="今日新品"/></a></li>
+    		<li><a href=""><img src="img/new2.jpg" title="热销单品"/></a></li>
+    		<li><a href=""><img src="img/new3.jpg" title="每日特价"/></a></li>
+    		<li><a href=""><img src="img/new4.jpg" title="好物专题"/></a></li>
+    	</ul>
+    </div>
+    <div class="oneweek1">
+    	<div class="oneweek">
+    	<p>
+    	<a class="today1" href="">今日新品</a>
+    	<a class="today2" href="">一周热销</a>
+    	<a href="">查看更多></a>
+    	</p>
+    	</div>
+    	<div class="oneweek2">
+    		<dl>
+    			<dt><a href="xiangqingye.html"><img src="img/today1.jpg"/></a></dt>
+    			<dd>￥88.75<span>226</span><i class="font">&#xe61a;</i></dd>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    		</dl>
+    		<dl>
+    			<dt><a href="xiangqingye.html"><img src="img/today2.jpg"/></a></dt>
+    			<dd>￥33.75<span>451</span><i class="font">&#xe61a;</i></dd>
+    			<p><img src="img/tyouxuan.png"/>2017夏季新款情侣装班服圆领短袖条纹T恤</p>
+    		</dl>
+    		 <dl>
+    			<dt><a href="xiangqingye.html"><img src="img/today3.jpg"/></a></dt>
+    			<dd>￥49.00<span>385</span><i class="font">&#xe61a;</i></dd>
+    			<p><img src="img/tyouxuan.png"/>韩版chic学院风街头简洁夏款刺绣白色T恤tee女</p>
+    		</dl>
+    		<dl>
+    			<dt><a href="xiangqingye.html"><img src="img/today4.jpg"/></a></dt>
+    			<dd>￥75.00<span>297</span><i class="font">&#xe61a;</i></dd>
+    			<p><img src="img/tyouxuan.png"/>街头风百搭字母印花韩版新款中长款T恤宽松显瘦个性T恤连衣裙子</p>
+    		</dl>
+    		<dl>
+    			<dt><a href="xiangqingye.html"><img src="img/today5.jpg"/></a></dt>
+    			<dd>￥53.75<span>323</span><i class="font">&#xe61a;</i></dd>
+    			<p><img src="img/tyouxuan.png"/>2017夏季新款韩版甜美百搭纯色雪纺压褶半身裙中裙百褶裙</p>
+    		</dl>
+    		<dl>
+    			<dt><a href="xiangqingye.html"><img src="img/today6.jpg"/><a></a></dt>
+    			<dd>￥47.50<span>181</span><i class="font">&#xe61a;</i></dd>
+    			<p><img src="img/tyouxuan.png"/>简单中的精致2017夏季新款字母刺绣上衣宽松打底衫T恤女</p>
+    		</dl>
+    		<dl>
+    			<dt><a href="xiangqingye.html"><img src="img/today7.jpg"/></a></dt>
+    			<dd>￥47.50<span>337</span><i class="font">&#xe61a;</i></dd>
+    			<p><img src="img/tyouxuan.png"/>夏款宽松涂鸦字母圆领短袖学生T恤</p>
+    		</dl>
+    		<dl>
+    			<dt><a href="xiangqingye.html"><img src="img/today8.jpg"/></a></dt>
+    			<dd>￥46.25<span>171</span><i class="font">&#xe61a;</i></dd>
+    			<p><img src="img/tyouxuan.png"/>韩版chic学院风怀旧烫图人物字母刺绣点缀短袖棉麻T恤女</p>
+    		</dl>
+    		<dl>
+    			<dt><a href="xiangqingye.html"><img src="img/today9.jpg"/></a></dt>
+    			<dd>￥45.00<span>485</span><i class="font">&#xe61a;</i></dd>
+    			<p><img src="img/tyouxuan.png"/>日系solar夏款字母刺绣日文宽松圆领短袖T恤</p>
+    		</dl>
+    		<dl>
+    			<dt><a href="xiangqingye.html"><img src="img/today10.jpg"/></a></dt>
+    			<dd>￥75.00<span>211</span><i class="font">&#xe61a;</i></dd>
+    			<p><img src="img/tyouxuan.png"/>2017夏季新款韩版甜美露肩网纱斗篷拼接收腰吊带连衣裙裙子女</p>
+    		</dl>
+    	</div>
+    </div>
+    <div class="haowu">
+    	<div class="haowu1">
+    		<a href="">查看更多></a>
+    			<h3>好物组货</h3>
+    	</div>
+    	<div class="haowu2">
+    		<a href=""><img src="img/hao1.jpg"/></a>
+    		<a href=""><img src="img/hao2.jpg"/></a>
+    		<a href=""><img src="img/hao3.jpg"/></a>
+    	</div>
+    	<div class="haowu3">
+    		
+    		<div class="ha1">
+    		<dl>
+    			<dt><a href=""><img src="img/h1.jpg"/></a></dt>
+    			<dd>￥106.25</dd>
+    		</dl>
+    		<dl>
+    			<dt><a href=""><img src="img/h2.jpg"/></a></dt>
+    			<dd>￥110.00</dd>
+    		</dl>
+            <dl>
+    			<dt><a href=""><img src="img/h3.jpg"/></a></dt>
+    			<dd>￥110.00</dd>
+    		</dl>
+    		</div>
+    		<div class="ha1">
+    		<dl>
+    			<dt><a href=""><img src="img/h4.jpg"/></a></dt>
+    			<dd>￥110.00</dd>
+    		</dl>
+    		<dl>
+    			<dt><a href=""><img src="img/h5.jpg"/></a></dt>
+    			<dd>￥110.00</dd>
+    		</dl>
+    		<dl>
+    			<dt><a href=""><img src="img/h6.jpg"/></a></dt>
+    			<dd>￥110.00</dd>
+    		</dl>
+    		</div>
+    		<div class="ha1">
+    		<dl>
+    			<dt><a href=""><img src="img/h7.jpg"/></a></dt>
+    			<dd>￥110.00</dd>
+    		</dl>
+    		<dl>
+    			<dt><a href=""><img src="img/h8.jpg"/></a></dt>
+    			<dd>￥110.00</dd>
+    		</dl>
+    		<dl>
+    			<dt><a href=""><img src="img/h9.jpg"/></a></dt>
+    			<dd>￥110.00</dd>
+    		</dl>
+           </div>	
+    	</div>
+    </div>
+    <div class="beauty">
+    		<a href="">春季新款来袭 买买买</a>
+    			<h3>美丽优选</h3>
+    	</div>
+    	<div id="wrap">
+    		<ul>
+    			<li>
+    				<a href="xiangqingye.html"><img src="img/m1.jpg"/></a>
+    			<p>￥77.50<span>136</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017春季新款浪漫碎花系带荷叶领宽松喇叭袖气质雪纺衫</p>
+    			</li>
+    			<li>
+    				<a href="xiangqingye.html"><img src="img/m2.jpg"/></a>
+    			<p>￥61.25<span>464</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017春韩版条纹性感休闲白色防晒衣女中长款修身衬衫</p>
+    			</li>
+    			<li>
+    				<a href="xiangqingye.html"><img src="img/m3.jpg"/></a>
+    			<p>￥68.75<span>59</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>春季新款百搭袖口蝴蝶结系带V领宽松显瘦衬衫上衣</p>
+    			</li>
+    			<li>
+    				<a href="xiangqingye.html"><img src="img/m4.jpg"/></a>
+    			<p>￥50.00<span>2263</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017春夏新款韩版休闲百搭宽松字母印花短袖圆领套头T恤上衣</p>
+    			</li>
+    			<li>
+    				<a href="xiangqingye.html"><img src="img/m5.jpg"/></a>
+    			<p>￥73.75<span>162</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<a href="xiangqingye.html"><img src="img/m17.jpg"/></a>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<a href="xiangqingye.html"><img src="img/m18.jpg"/></a>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<img src="img/m19.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    		</ul>
+    		<ul>
+    			<li>
+    				<img src="img/m6.jpg"/>
+    			<p>￥66.25<span>131</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>韩版修身显瘦高腰弹力牛仔裤喇叭裤女休闲九分裤大码毛边微喇裤子</p>
+    			</li>
+    			<li>
+    				<img src="img/m7.jpg"/>
+    			<p>￥60.00<span>45</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017早春欧美性感网纱透视花边半高领灯笼袖纯色长袖雪纺衫</p>
+    			</li>
+    			<li>
+    				<img src="img/m8.jpg"/>
+    			<p>￥87.50<span>1386</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>春季新款韩版显瘦清新甜美喇叭袖蝴蝶系带碎花连衣裙</p>
+    			</li>
+    			<li>
+    				<img src="img/m9.jpg"/>
+    			<p>￥81.25<span>41</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017春季品牌女装时尚韩国魔术裤小脚紧身裤长裤休闲打底裤</p>
+    			</li>
+    			<li>
+    				<img src="img/m10.jpg"/>
+    			<p>￥59.00<span>112</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>韩版新款字母印花宽松有范的短袖T恤</p>
+    			</li>
+    			<li>
+    			<img src="img/m20.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<img src="img/m21.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<img src="img/m22.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    		</ul>
+    		<ul>
+    			<li>
+    				<img src="img/m11.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    		</li>
+    		<li>
+    				<img src="img/m12.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    			<img src="img/m13.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    			<img src="img/m14.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    			<img src="img/m15.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    			<img src="img/m23.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<img src="img/m24.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<img src="img/m25.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    		</ul>
+    		<ul>
+    		<li>
+    				<img src="img/m16.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    		</li>
+    		<li>
+    				<img src="img/m26.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    				<img src="img/m27.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    			<img src="img/m28.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    			<img src="img/m29.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    			<img src="img/m30.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<img src="img/m31.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<img src="img/m32.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			
+    		</ul>
+    		<ul>
+    			<li>
+    				<img src="img/m33.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    	       </li>
+    	       <li>
+    				<img src="img/m34.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    				<img src="img/m35.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    			<img src="img/m36.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>套装宽松印花字母贴布肩带露肩吊带T恤阔腿短裤套装</p>
+    			</li>
+    			<li>
+    			<img src="img/m37.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<img src="img/m38.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<img src="img/m39.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    			<li>
+    			<img src="img/m40.jpg"/>
+    			<p>￥88.75<span>226</span><i class="font">&#xe61a;</i></p>
+    			<p><img src="img/tyouxuan.png"/>2017韩版衬衫女长袖白色雪纺蝴蝶结宽松衬衣</p>
+    			</li>
+    		</ul>
+    		
+		</div>  
+		<!--------------------底部--------------------------------------->
+		<div class="footer">
+			<div class="footer-con">
+				<div class="footer-1">
+					<ul>
+						<li><h4>卖家帮助</h4></li>
+						<li>新手指南</li>
+						<li>服务保障</li>
+						<li>常见问题</li>
+						<li>风险监测</li>
+					</ul>
+					<ul>
+						<li><h4>商家帮助</h4></li>
+						<li>供货商招募</li>
+						<li>商家后台</li>
+					</ul>
+					<ul>
+						<li><h4>关于我们</h4></li>
+						<li>关于美丽说</li>
+						<li>联系我们</li>
+					</ul>
+					<ul>
+						<li><h4>关注我们</h4></li>
+						<li><a href=""><img src="img/xweibo.jpg" />&nbsp;新浪微博</a></li>
+						<li><a href=""><img src="img/qqk.jpg" />&nbsp;QQ空间</a></li>
+						<li><a href=""><img src="img/twb.jpg" />&nbsp;腾讯微博</a></li>
+					</ul>
+					<dl>
+						<dd><h4>美丽说微信服务号</h4></dd>
+						<dt><img src="img/wx2.png"/></dt>
+					</dl>
+					<dl>
+						<dd><h4>美丽说客户端下载</h4></dd>
+						<dt><img src="img/meils.png"/></dt>
+					</dl>
 					
-				</ul> 
-			</li>
-			<li><a href="" class="last">商家后台</a></li>
-		</ul>
+				</div>
+				<div class="footer-record">
+					<a href=""> Copyright ©2017 Meilishuo.com &nbsp;电信与信息服务业务经营许可证100798号经营性网站备案信息</a>
+					<p> 京ICP备11031139号&nbsp; 京公网安备110108006045&nbsp;&nbsp; 客服电话：4000-800-577&nbsp; 文明办网文明上网举报电话：010-82615762 &nbsp;违法不良信息举报中心</p>
+				</div>
 			</div>
 		</div>
-		<div id="search">
-			<div class="search-inner">
-				<a href="http://www.meilishuo.com/" class="logo"></a>
-			
-			<div class="search-box">
-				<div class="search-tab">				
-					<span class="active">宝贝</span>
-					<span>店铺</span>
-				</div>
-				<div class="sousuo">
-					<input class="search-txt" type="text">	
-						<span class="search-btn"></span>					
-				</div>
-				<div class="hotword">
-				<a href="" style="color:#FF3366;font-size: 11px">春季新品</a>
-				<a href="" style="color:#666666;font-size: 11px">运动鞋</a>
-				<a href="" style="color:#FF3366;font-size: 11px">衬衫</a>
-				<a href="" style="color:#666;font-size: 11px">薄外套</a>
-				<a href="" style="color:#666666;font-size: 11px">牛仔</a>
-				<a href="" style="color:#666;font-size: 11px">T恤</a>
-				<a href="" style="color:#666;font-size: 11px">套装</a>
-				<a href="" style="color:#666666;font-size: 11px">牛仔裤</a>
-				<a href="" style="color:#666;font-size: 11px">开衫</a>
-				<a href="" style="color:#FF3366;font-size: 11px">小白鞋</a>
-				<a href="" style="color:#666666;font-size: 11px">风衣</a>
-				<a href="" style="color:#666;font-size: 11px">卫衣</a>
-				</div>
-			</div>
-			<a class="spread">
-				<img src="img/erweima.gif" />
-			</a>
-			</div>
-		</div>
-		<div class="sec-nav">
-			<ul class="nav-con">
-				<li class="nav-item">
-			<a href="http://www.meilishuo.com/" class="nav-active">首页</a>
+			<div class="app">
+			<ul>
+				<li><i class="font">&#xe65d;</i>&nbsp;<a href="">下载APP</a>
+					<img src="img/app.png"/>
 				</li>
-				<li class="nav-item"><a class="link" href="">上衣</a></li>
-				<li class="nav-item"><a class="link" href="">裙子</a></li>
-				<li class="nav-item"><a class="link" href="">裤子</a></li>
-				<li class="nav-item"><a class="link" href="">女鞋</a></li>
-				<li class="nav-item"><a class="link" href="">包包</a></li>
-				<li class="nav-item"><a class="link" href="">配饰</a></li>
-				<li class="nav-item"><a class="link" href="">美妆</a></li>
-				<li class="nav-item"><a class="link" href="">男友</a></li>
-				<li class="nav-item"><a class="link" href="">童装</a></li>
-				<li class="nav-item"><a class="link" href="">家居</a></li>
+				<li><i class="font">&#xe630;</i>&nbsp;<a href="">购物车</a></li>
+				<li><i class="font">&#xe6c8;</i>&nbsp;<a href="">消息</a></li>
+				<li><i class="font">&#xe6f0;</i>&nbsp;<a href="">优惠券</a></li>
+				<li><i class="font">&#xe621;</i>&nbsp;<a href="">收藏</a></li>
+				<li><i class="font">&#xe758;</i>&nbsp;<a href="">足迹</a></li>
 			</ul>
 		</div>
-	</div>	
+		
 	</body>
+
 </html>

@@ -1,0 +1,92 @@
+body{
+	background-color: #f2f0f0;
+}
+.zhuce{
+	width: 980px;
+	height: 433px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.left-box img{
+	float: left;
+	margin:40px;
+}
+.right-box {
+    width: 363px;
+    height: 370px;
+    float: right;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    border: 1px solid #dcdcdc;
+}
+.right-box .title{
+	font-size: 14px;
+    color: #666;
+    line-height: 56px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-left: 0px;
+    text-indent: 40px;
+    font-weight: 700;
+}
+.right-box .login {
+    float: right;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 40px;
+}
+.phone{
+	width:282px;
+	box-sizing: border-box;
+	height: 30px;
+	line-height: 30px;
+	margin:10px 20px;
+}
+.zhu{
+	width: 322px;
+	height: 207px;
+	margin: 0 auto;
+}
+.submit{
+	background-color: #f36;
+    color: #fff;
+    text-align: center;
+    width:282px;
+    border: 0;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.right-box .rules {
+    color: #f36;
+    text-decoration: underline;
+}
+.right-box label{
+	margin-left: 40px;
+}
+.right-box .txt{
+	margin-left: 40px;
+}
+.fast_way{
+	margin-left: 40px;
+	margin-top: 15px;
+}
+.fast_way a{
+	float: left;
+	width: 86px;
+	height: 35px;
+	background: url(../img/qww.png) no-repeat;
+}
+.fast_way .qq_way {
+    background-position: -6px -120px;
+}
+ .fast_way a.sina_way {
+    background-position: -6px -160px;
+    margin-left: 12px;
+    margin-right: 12px;
+ }
+.fast_way a.weixin_way {
+    background-position: -6px -200px;
+}

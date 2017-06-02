@@ -1,0 +1,145 @@
+.mbox{
+	width: 1200px;
+	height: 147px;
+	margin:15px auto;
+	border: 1px solid #e1e1e1;
+}
+.mbox1{
+	margin: 20px 0;
+	float: left;
+	width: 25%;
+}
+.mbox1-con{
+	float: left;
+    margin-left: 30px;
+    text-align: center;
+}
+.mbox img{
+	width: 60px;
+	display: block;
+}
+.mbox1 ul{
+	float:left;
+	margin-left: 15px;
+}
+.mbox1 li{
+	margin-bottom: 10px;
+    color: #666;
+    font-size: 12px;  
+}
+.mbox1-con p{
+	padding: 2px;
+	font-size: 14px;
+	color: #333;
+	font-weight: 700;
+}
+.mbox1 li:hover a{
+	color: #f36;
+}
+.mbox1-con img{
+	margin-top: 10px;
+}
+.orderbox{
+	width: 1200px;
+	height: 41px;
+	margin: 10px auto;
+	background: #f8f8f8;
+	border: 1px solid #e1e1e1;
+	cursor: pointer;
+}
+.orderbox .on{
+	background: #fff;
+}
+.orderbox .pop a{
+	display: block;
+	float: left;
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 1px solid transparent;
+}
+.orderbox .pop span{
+	display: block;
+	float: left;
+}
+.orderbox .pop span:last-of-type{
+	margin-left: 3px;
+	width: 10px;
+	height: 40px;
+	background:url(../img/jj.png) no-repeat center center;
+	font-size: 10px;
+}
+.orderbox .pop ul{
+	display: none;
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 106px;
+	border: 1px solid #c5c5c5;
+	background-color: #fff;
+	z-index: 10;
+}
+.orderbox .pop .price{
+	display: block;
+	position: relative;
+}
+.pop a:hover{
+	color: #f36;
+}
+.pop a:hover ul{
+	display: block;
+	color: #333333;
+}
+.priceWrap{
+    float: left;
+	margin-left: 22px;
+	height: 40px;
+	line-height: 40px;
+}
+.priceWrap input{
+	width: 62px;
+    height: 22px;
+    border: 1px solid #eaeaea;
+}
+.fenye{
+	padding: 15px 20px;
+	text-align: left;
+	color: #ccc;
+	text-align:center;}
+.fenye a{
+	display: inline-block;
+	color: #333;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;	
+	padding: 0 10px;
+	border: 1px solid #ddd;	
+	margin: 0 2px;
+	border-radius: 4px;
+	vertical-align: middle;}
+.fenye a:hover{
+	text-decoration: none;
+	border: 1px solid #428bca;}
+.fenye span.current{
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	margin: 0 2px;
+	color: #fff;
+	background-color:#f36;	
+	border: 1px solid #428bca;
+	border-radius: 4px;
+	vertical-align: middle;}
+.fenye span.disabled{	
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	margin: 0 2px;	
+	color: #bfbfbf;
+	background: #f2f2f2;
+	border: 1px solid #bfbfbf;
+	border-radius: 4px;
+	vertical-align: middle;}
