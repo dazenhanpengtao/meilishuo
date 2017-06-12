@@ -6,6 +6,7 @@
 		<title>美丽说注册</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -19,13 +20,13 @@
 					<div class="right-box">
 						<p class="title">
 						新用户注册
-						<a href="/user/login" class="login">已有账号</a>	
+						<a href="login.html" class="login">已有账号</a>	
 						</p>
-						<form class="zhu" action="register.php" method="post">
-			    <input maxlength="11" class="phone" placeholder="手机号码" type="tel">
-				<input class="phone" type="password" placeholder="密码" />
-				<input class="phone" type="password" placeholder="确认密码" />
-				<input class="submit" type="submit" value="注册" />
+						<form class="zhu">
+			    <input maxlength="11" class="phone" placeholder="手机号码" type="tel" id="username">
+				<input class="phone" type="password" placeholder="密码" id="password" />
+				<input class="phone" type="password" placeholder="确认密码"  id="password"/>
+				<input class="submit" type="submit" value="注册" id="submit"/>
 				<label>				
 			    <input value="1" class="check" id="rules" checked="checked" type="checkbox">					同意					
 			    <a href="" class="rules">美丽说注册条款</a>				
@@ -89,6 +90,75 @@
 				<li><i class="font">&#xe758;</i>&nbsp;<a href="">足迹</a></li>
 			</ul>
 		</div>
+		
+		<script type="text/javascript">
+			$(function(){												
+				$(".right-box .zhu input").blur(function(){
+					var $txt = $(".right-box .zhu input").val();
+					var reg = /0?(13|14|15|18)[0-9]{9}/;
+					var fals = reg.test($txt);
+//					if($txt == "" || fals == false){
+//						$(".logon-input1 p").show();
+//					}else{
+//						$(".logon-input1 p").hide();
+						$("#submit").click(function(){
+							window.location.href = "login.html"							
+							alert("注册成功");
+						})						
+						console.log(111)						
+//					}
+				})
+//			var aray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+//			var a = "";
+//			for(var i = 0; i <= 3;i++){
+//				var r = Math.floor(Math.random()*aray.length);
+//				a += aray[r];
+//			}
+//			$(".logon-yan .suiji span").html(a);
+//			$(".logon-yan input").blur(function(){
+//				var va = $(".logon-yan input").val();
+//				if(va != a){
+//					$(".logon-yan p").show();
+//				}else{
+//					$(".logon-yan p").hide();
+//				}
+//			})
+			$("#password").blur(function(){
+				var pas = $("#password").val();
+				var regs = /^[0-9a-zA-Z_#]{6,14}$/;
+				var fals = regs.test(pas);
+//				if(fals == false || pas == ""){
+//					$(".mima p span").show();
+//				}else{
+//					$(".mima p span").hide();
+//				}
+			})
+			$("#submit").click(function(){
+				var user = $("#username").val();
+				var pas = $("#password").val();
+				var confirm = $("#confirm").val();
+				$.ajax({
+					type:"post",
+					url:"http://localhost/meilishuo/register.php",
+					async:true,
+					data:{"tel":user,"password":pas,"confirm":confirm},
+					success:function(data){
+						if(data == "3"){
+							alert("请输入完整的信息");
+						}else{
+							console.log(data);
+						}
+					}
+				});
+			})										
+//			})
+		</script>
+
+		
+		
+		
+		
+		
 		
 	</body>
 
